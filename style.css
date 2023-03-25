@@ -190,11 +190,13 @@ button {
   border-radius: 4px;
   margin-top: 16px;
   cursor: pointer;
+  transition: background-color 2s;
 }
 .btn-secondary {
   background-color: white;
   border: 1px solid #3091f2;
   color: #0a1f33;
+  transition: background-color 0.7s;
 }
 
 button:hover,
@@ -202,4 +204,9 @@ button:focus {
   background-color: royalblue;
   color: white;
   border: none;
+}
+
+button:hover i {
+  transform: rotate(360deg);
+  transition: 1s;
 }
