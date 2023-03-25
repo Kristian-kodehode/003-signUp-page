@@ -13,9 +13,7 @@ h1 {
 
 main {
   max-width: 1440px;
-
   margin: 0 auto;
-  /* background-color: antiquewhite; */
 }
 
 main {
@@ -25,6 +23,7 @@ main {
 /* SECTION LEFT 
     - 2 illustrations
     - 1 heading
+    -Illustration animation hovers up and down after delay.
 
 
 
@@ -80,6 +79,8 @@ main {
 /* SECTION RIGHT 
     - white background with rounded border radius.
     - Sign up Form.
+    - Animation Slide in from the right
+    - Signup blue button will refresh page
 
 
 
@@ -120,8 +121,6 @@ h2 {
 }
 
 header {
-  /* gap: 16px; */
-  /* align-items: center; */
   line-height: 16px;
 }
 header > p {
@@ -146,8 +145,6 @@ form {
 label {
   display: block;
   margin-top: 16px;
-
-  /* color: inherit; */
 }
 
 input {
