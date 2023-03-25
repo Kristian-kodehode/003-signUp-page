@@ -1,0 +1,208 @@
+body {
+  background-color: #fabb9c;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 64px;
+  color: white;
+  text-align: center;
+}
+
+main {
+  max-width: 1440px;
+
+  margin: 0 auto;
+  /* background-color: antiquewhite; */
+}
+
+main {
+  display: flex;
+}
+
+/* SECTION LEFT 
+    - 2 illustrations
+    - 1 heading
+
+
+
+*/
+
+.section-left {
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin: 0;
+
+  animation: illustrations 4s;
+  animation-delay: 5sek;
+  /* animation-duration: 4s; */
+}
+
+@keyframes illustrations {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+.images-illustrations {
+  position: relative;
+}
+
+.img-plant {
+  position: absolute;
+  bottom: 0px;
+  left: 200px;
+}
+
+.img-meditate {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 8s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* SECTION RIGHT 
+    - white background with rounded border radius.
+    - Sign up Form.
+
+
+
+*/
+
+.section-right {
+  background-color: white;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 16px 0px 0px 16px;
+
+  width: 400px;
+  height: 80vh;
+  padding: 100px 16px 50px 32px;
+  position: absolute;
+  right: 0;
+  box-shadow: -8px 0px 16px rgba(0, 0, 0, 0.1);
+
+  animation-name: signup;
+  animation-duration: 4s;
+  animation-delay: 5sek;
+}
+@keyframes signup {
+  0% {
+    right: -400px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+h2 {
+  display: block;
+  margin: 4px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #0a1f33;
+}
+
+header {
+  /* gap: 16px; */
+  /* align-items: center; */
+  line-height: 16px;
+}
+header > p {
+  color: rgb(210, 210, 210);
+}
+
+form {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 320px;
+}
+
+/* INPUTS FORMS
+-FULL NAME
+-EMAIL
+-PASSWORD 
+
+
+
+*/
+
+label {
+  display: block;
+  margin-top: 16px;
+
+  /* color: inherit; */
+}
+
+input {
+  /* height: 45px; */
+  padding: 12px 0px;
+  width: 320px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ededed;
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+/* 
+- CTA BUTTONS
+
+
+
+*/
+
+.cta {
+  width: 330px;
+  margin-top: 32px;
+}
+
+.cta input {
+  width: auto;
+}
+.cta label {
+  width: auto;
+  display: inline;
+}
+
+button {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #3091f2;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  width: 330px;
+  height: 49px;
+  border-radius: 4px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.btn-secondary {
+  background-color: white;
+  border: 1px solid #3091f2;
+  color: #0a1f33;
+}
+
+button:hover,
+button:focus {
+  background-color: royalblue;
+  color: white;
+  border: none;
+}
